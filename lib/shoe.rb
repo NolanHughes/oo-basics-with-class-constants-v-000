@@ -7,7 +7,7 @@ class Shoe
   def initialize(brand)
     @brand = brand
     BRANDS.each do |check_brand|
-      if BRANDS.length 
+      if BRANDS.length
         BRANDS << brand
       end
     end
@@ -17,7 +17,5 @@ class Shoe
     self.condition = "new"
     puts "Your shoe is as good as new!"
   end
-
-  
 
 end
