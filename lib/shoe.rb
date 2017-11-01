@@ -4,8 +4,10 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    if brand !== brand
-      BRANDS << brand
+    BRANDS.each |check_brand|
+      if check_brand == brand
+        BRANDS << brand
+      end
     end
   end
 
