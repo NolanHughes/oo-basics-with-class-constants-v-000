@@ -2,10 +2,12 @@ class Shoe
   attr_accessor :color, :size, :material, :condition
   attr_reader :brand
 
+  BRANDS = []
+
   def initialize(brand)
     @brand = brand
     BRANDS.each do |check_brand|
-      if check_brand !== brand
+      if BRANDS.length 
         BRANDS << brand
       end
     end
@@ -16,6 +18,6 @@ class Shoe
     puts "Your shoe is as good as new!"
   end
 
-  BRANDS = []
+  
 
 end
