@@ -10,7 +10,6 @@ class Book
     puts "Flipping the page...wow, you read fast!"
   end
 
-  class GENRES
-  end
+  GENRES = []
 
 end
