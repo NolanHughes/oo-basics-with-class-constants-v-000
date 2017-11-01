@@ -6,11 +6,11 @@ class Shoe
 
   def initialize(brand)
     @brand = brand
-    # BRANDS.each do |check_brand|
-    #   if BRANDS.length == 0
+    BRANDS.include?("#{brand}") 
+      if BRANDS.length == 0
         BRANDS << brand
       # end
-    # end
+    end
   end
 
   def cobble
